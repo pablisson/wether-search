@@ -4,7 +4,7 @@
 </h1>
 
 <h3 align="center">
-    🚀 O clima da sua cidade na semana.  
+    O clima da sua cidade na semana.  
 </h3>
 
 <p align="center">
@@ -37,7 +37,7 @@
 </p>
 
 <h4 align="center">
-	🚧   Concluído 🚀 🚧
+	🚧   Em construção ... 🚀 🚧
 </h4>
 
 Tabela de conteúdos
@@ -46,8 +46,9 @@ Tabela de conteúdos
    * [Sobre o projeto](#-sobre-o-projeto)
    * [Funcionalidades](#-funcionalidades)
    * [Layout](#-layout)
-     * [Mobile](#mobile)
-     * [Web](#web)
+     * [Web Service](#webservice)
+     * [Web Backend](#webbackend)
+     * [Web Frontend](#webfrontend)
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
      * [Rodando o Backend (servidor)](#user-content--rodando-o-backend-servidor)
@@ -65,17 +66,16 @@ Tabela de conteúdos
 
 ## 💻 Sobre o projeto
 
-♻️ Ecoleta - é uma forma de conectar empresas e entidades de coleta de resíduos orgânicos e inorgânicos as pessoas que precisam descartar seus resíduos de maneira ecológica.
+🌦️ Weather search - é uma plataforma que tem por objetivo mostrar o clima da cidade em diferentes dispositivos.
 
 
-Projeto desenvolvido durante a **NLW - Next Level Week** oferecida pela [Rocketseat](https://blog.rocketseat.com.br/primeira-next-level-week/).
-O NLW é uma experiência online com muito conteúdo prático, desafios e hacks onde o conteúdo fica disponível durante uma semana.
+Projeto desenvolvido para linx.
 
 ---
 
 ## ⚙️ Funcionalidades
 
-- [x] Empresas ou entidades podem se cadastrar na plataforma web enviando:
+- [x] O Usuário pode buscar a sua cidade:
   - [x] uma imagem do ponto de coleta
   - [x] nome da entidade, email e whatsapp
   - [x] e o endereço para que ele possa aparecer no mapa
@@ -102,7 +102,7 @@ O layout da aplicação está disponível no Figma:
 </a>
 
 
-### Mobile
+### webservice
 
 <p align="center">
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/home-mobile.png" width="200px">
@@ -110,7 +110,7 @@ O layout da aplicação está disponível no Figma:
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/detalhes-mobile.svg" width="200px">
 </p>
 
-### Web
+### webbackend
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/web.svg" width="400px">
@@ -118,6 +118,12 @@ O layout da aplicação está disponível no Figma:
   <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/sucesso-web.svg" width="400px">
 </p>
 
+### webfrontend
+<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/web.svg" width="400px">
+
+  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/sucesso-web.svg" width="400px">
+</p>
 ---
 
 ## 🚀 Como executar o projeto
