@@ -6,7 +6,7 @@ class ClimaTempo(models.Model):
     Classe que representa a tabela ClimaTempo do banco de dados.
     """
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    data = models.DateField(auto_now=True)
+    data = models.DateField()
     temperatura = models.DecimalField(max_digits=5, decimal_places=2)
     pressao = models.DecimalField(max_digits=5, decimal_places=2)
     humidade = models.DecimalField(max_digits=5, decimal_places=2)
