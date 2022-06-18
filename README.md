@@ -4,7 +4,7 @@
 </h1>
 
 <h3 align="center">
-    🌱 O clima da sua cidade nas semana.  💚
+    🚀 O clima da sua cidade nas semana.  
 </h3>
 
 <p align="center">
