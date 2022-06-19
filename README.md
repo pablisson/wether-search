@@ -76,8 +76,8 @@ Projeto desenvolvido para linx.
 ## ⚙️ Funcionalidades
 
 - [x] O Usuário pode buscar a sua cidade:
-  - [x] uma imagem do ponto de coleta
-  - [x] nome da entidade, email e whatsapp
+  - [x] O usuário poderá visualizar o clima da semana
+  - [x] A cidade deverá ser salva no banco
   - [x] e o endereço para que ele possa aparecer no mapa
   - [x] além de selecionar um ou mais ítens de coleta: 
     - lâmpadas
