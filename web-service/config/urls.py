@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from weatherApp.views import ClimaTempoViewSet
+from weatherApp.views import ClimaTempoViewSet, CidadeViewSet
 from rest_framework import routers
 
 router = routers.DefaultRouter()
-router.register(r'climaTempo', ClimaTempoViewSet)
+router.register(r'climaTempo', ClimaTempoViewSet, basename='climaTempo')
+router.register(r'cidade', CidadeViewSet, basename='cidade')
 
 urlpatterns = [
     path('admin/', admin.site.urls),

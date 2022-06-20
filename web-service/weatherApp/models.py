@@ -35,3 +35,30 @@ class ClimaTempo(models.Model):
         permissions = (
             ('view_climatempo', 'Can view clima_tempo'),
         )
+
+class Cidade(models.Model):
+    """
+    Classe que representa a tabela Cidade do banco de dados.
+    """
+    id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
+    nome = models.CharField(max_length=200)
+    #estado = models.CharField(max_length=100)
+    #pais = models.CharField(max_length=100)
+    #latitude = models.DecimalField(max_digits=5, decimal_places=2)
+    #longitude = models.DecimalField(max_digits=5, decimal_places=2)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return self.nome
+
+    class Meta:
+        verbose_name = 'Cidade'
+        verbose_name_plural = 'Cidades'
+        ordering = ['-created_at']
+        db_table = 'cidade'
+        managed = True
+        default_permissions = ()
+        permissions = (
+            ('view_cidade', 'Can view cidade'),
+        )
