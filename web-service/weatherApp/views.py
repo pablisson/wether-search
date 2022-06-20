@@ -5,6 +5,11 @@ from weatherApp.serializer import ClimaTempoSerializer, CidadeSerializer
 
 from django.db.models import Q
 
+#from tekton.router import to_path
+import urllib 
+import urllib.parse
+import requests
+
 
 
 #from google.appengine.api import urlfetch
@@ -17,12 +22,10 @@ class ClimaTempoViewSet(viewsets.ModelViewSet):
   #print(ClimaTempoSerializer.Meta.fields)
   print(ClimaTempoSerializer.data)
   
-
 class CidadeViewSet(viewsets.ModelViewSet):
   queryset = Cidade.objects.all()
   serializer_class = CidadeSerializer
   #print(dir(CidadeSerializer.data))
-
 
   def create(self, request):
     serializer = CidadeSerializer(data=request.data)
@@ -36,12 +39,13 @@ class CidadeViewSet(viewsets.ModelViewSet):
     serializer = CidadeSerializer(instance=instance)
     #print(serializer.data)
     return Response(serializer.data)
-  
+
   def list(self, request):
     queryset = self.filter_queryset(self.get_queryset())
     serializer = CidadeSerializer(queryset, many=True)
-    print(request.query_params.get('nome'))
-    if request.query_params.get('nome') is not None:
+    region = request.query_params.get('nome')
+    print(region)
+    if region is not None:
       #nItem = queryset.filter(Q(nome__icontains=request.query_params.get('nome')))      
       #print(queryset)      
       item = queryset.filter(nome=request.query_params.get('nome'))
@@ -55,10 +59,55 @@ class CidadeViewSet(viewsets.ModelViewSet):
       #return Response(item)
       print(item)
       print(item.values('nome'))
+
+      
+      print(region)
+      manager_data = url_generic_search()
+
+      url = manager_data.join_generic_url(region)
+      print(url)
+      #url = join_generic_url()
+      #response = requests.get(url)
+      #print(response.json())
+      
+      
+
+      #operUrl = urllib.request.urlopen(url)
+
+      #r = requests.get(url)
+      #json_response = r.json()
+      #buscaDadosSite(nameRegion)
+
       return Response(item.values('nome'))
     return Response(serializer.data)
 
 
+
+
+
+    def buscaDadosSite(region):
+      url = "http://api.openweathermap.org/data/2.5/forecast?q="+region+",pt_br&APPID=4b901a81f4942afae9ee8d6657e3e0dd&units=metric"
+      operUrl = urllib.request.urlopen(url)
+      if(operUrl.getcode()==200):
+        data = operUrl.read()
+      else:
+        print("Error receiving data", operUrl.getcode())
+      print(result.content)
+      return result.content
+
+
+
+class url_generic_search:
+  def get_json_from_url(self, url):
+    r = requests.get(url)
+    json_response = r.json()
+    return json_response
+
+  def join_generic_url(self,region):  
+    url = 'http://api.openweathermap.org/data/2.5/forecast?'
+    params = {'q=' : region,'pt_br&APPID' : '4b901a81f4942afae9ee8d6657e3e0dd', 'units' : 'metric'}   
+    return url + urllib.parse.urlencode(params)
+  
 
  
 
