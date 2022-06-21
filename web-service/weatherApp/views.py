@@ -8,9 +8,18 @@ from django.db.models import Q
 #from tekton.router import to_path
 import urllib 
 import urllib.parse
+#import urllib.urlencode
 import requests
+import jsonpath
 
-
+#import urllib.parse 
+#from urllib import urlencode
+# try:
+#     import urlparse
+#     from urllib import urlencode
+# except: # For Python 3
+#     import urllib.parse as urlparse
+#     from urllib.parse import urlencode
 
 #from google.appengine.api import urlfetch
 # Usar urlfech.fetch() para obter os dados do climaTempo.json e cidades.json
@@ -45,109 +54,41 @@ class CidadeViewSet(viewsets.ModelViewSet):
     serializer = CidadeSerializer(queryset, many=True)
     region = request.query_params.get('nome')
     print(region)
-    if region is not None:
-      #nItem = queryset.filter(Q(nome__icontains=request.query_params.get('nome')))      
-      #print(queryset)      
+    if region is not None:    
       item = queryset.filter(nome=request.query_params.get('nome'))
-      #item = Cidade.objects.filter(nome=request.query_params.get('nome'))
-      #item = Cidade.objects.get(nome=request.query_params.get('nome'))
-      #item = Cidade.objects.get(nome=request.query_params.get('nome'))
-      #serializerItem = CidadeSerializer(item, many=True)
-      #print(type(request.query_params.get('nome')))
-      #print(type(item))
-      #print(serializer.data)
-      #return Response(item)
+
       print(item)
       print(item.values('nome'))
 
-      
       print(region)
       manager_data = url_generic_search()
 
       url = manager_data.join_generic_url(region)
       print(url)
-      #url = join_generic_url()
-      #response = requests.get(url)
-      #print(response.json())
-      
-      
-
-      #operUrl = urllib.request.urlopen(url)
-
-      #r = requests.get(url)
-      #json_response = r.json()
-      #buscaDadosSite(nameRegion)
 
       return Response(item.values('nome'))
     return Response(serializer.data)
 
 
 
-
-
-    def buscaDadosSite(region):
-      url = "http://api.openweathermap.org/data/2.5/forecast?q="+region+",pt_br&APPID=4b901a81f4942afae9ee8d6657e3e0dd&units=metric"
-      operUrl = urllib.request.urlopen(url)
-      if(operUrl.getcode()==200):
-        data = operUrl.read()
-      else:
-        print("Error receiving data", operUrl.getcode())
-      print(result.content)
-      return result.content
-
-
-
 class url_generic_search:
+  def __init__(self):
+    self.base_url = 'http://api.openweathermap.org/data/2.5/weather?q='
+    self.params = {'pt_br&APPID' : '4b901a81f4942afae9ee8d6657e3e0dd', 'units' : 'metric'} 
+    self.json_response = None      
+
   def get_json_from_url(self, url):
     r = requests.get(url)
     json_response = r.json()
     return json_response
 
-  def join_generic_url(self,region):  
-    url = 'http://api.openweathermap.org/data/2.5/forecast?'
-    params = {'q=' : region,'pt_br&APPID' : '4b901a81f4942afae9ee8d6657e3e0dd', 'units' : 'metric'}   
-    return url + urllib.parse.urlencode(params)
+  def join_generic_url(self,region): 
+    self.params['q'] = region
+    return self.base_url + urllib.parse.urlencode(self.params)
+  
+  def get_weather_by_region(self, city):
+    url = self.join_generic_url(city)
+    self.json_response = self.get_json_from_url(url)    
+    return self.json_response
   
 
- 
-
-  
-  """
-  def retrieve(self, request, pk=None):
-    queryset = self.get_queryset(self, request)
-    serializer = self.get_serializer(queryset, many=True)
-    print(dir(serializer.data))
-    return Response(serializer.data)
-  #name = CidadeSerializer.get_attribute('nome')
-"""
-
-  """
-  def get_queryset(self, request, *args, **kwargs):
-    queryset = super().get_queryset(self, request, *args, **kwargs)
-    print(queryset.filter(nome__icontains=self.request.query_params.get('nome', '')))
-    
-    is_private_query = Q(is_private=True, owner=self.request.user)
-    groups_user_is_part_of = self.request.user.groups().values_list('id', flat=True)
-    is_not_private_query = Q(is_private=False) & (Q(owner=self.request.user) | Q(groups__id__in=groups_user_is_part_of))
-
-    return queryset.filter(is_private_query | is_not_private_query).order_by('nome')
-    """
-    #name = self.request.query_params.get('nome', None)
-    #print(name)
-  #urlBase = ""
-  #urlfetch
-
-
-"""
-class CidadeViewSet(
-  mixins.ListModelMixin,
-  mixins.CreateModelMixin,
-  mixins.RetrieveModelMixin,
-  mixins.UpdateModelMixin,
-  mixins.DestroyModelMixin, 
-  viewsets.GenericViewSet
-):
-  queryset = Cidade.objects.all()
-  serializer_class = CidadeSerializer
-  print(CidadeSerializer.data)
-  """
