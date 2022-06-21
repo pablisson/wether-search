@@ -6,14 +6,26 @@ const apiAxios = axios.create({
 });
 
 export const api = {
-  enviaCidade: async (region) => {
+  postWeather: async (region) => {
     try {
       console.log('region:', region);
-      const data = await apiAxios.post('weather/',{'name':region})
+      const data = await apiAxios.post('weather/',{'nome':region})
       console.log('data:', data);
       return data;
     } catch (error){
       console.log('Error:enviaCidade:', JSON.stringify(error.message))
+      return false
+    }
+  },
+  getWeather: async (city, isdb) => {
+    try {      
+      console.log(city, isdb)
+      
+      const data = await apiAxios.get(`weather/?nome=${city}&db=${isdb}`)
+      //console.log('data:', data);
+      return data;
+    } catch (error){
+      console.log('Error:getWeather:', JSON.stringify(error.message))
       return false
     }
   },

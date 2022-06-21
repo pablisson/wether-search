@@ -9,33 +9,43 @@
   gap: 5px;
   
 }
+.fundo{
+  background-color: var(--purple-800);
+  border-radius: 15;
+  padding:20 0 20 0;
+}
+.item1 {
 
-.um {
   grid-column: 1 / 7;
   grid-row: 1;
 }
-.dois {
+.item2 {
+
   grid-column: 2 / 7;
   grid-row: 1;
 }
-.tres {
+.item3 {
+
   grid-column: 3 / 7;
   grid-row: 1;
 }
-.quatro {
+.item4 {
+
   grid-column: 4 / 7;
   grid-row: 1;
 }
-.cinco {
+.item5 {
+  
   grid-column: 5 / 7;
-  grid-row: 41;
+  grid-row: 1;
 }
-.seis {
+.item6 {
   grid-column: 6 / 7;
   grid-row: 1;
 }
 
-.sete{
+.item7 {
+  
   grid-column: 7 / 7;
   grid-row: 1;
 }

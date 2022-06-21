@@ -13,15 +13,9 @@ export function Item(props){
             <p>{props.sea_level}</p>
             <p>{props.grnd_level}</p>
             <p>{props.humidity}</p>
-            <p>{props.temp_kf}</p>
-
-            <p>{props.id}</p>
-            <p>{props.main}</p>
             <p>{props.description}</p>
-            <p>{props.icon}</p>
-
+            <p><img src={`http://openweathermap.org/img/wn/${props.icon}@2x.png`}/></p>
             <p>{props.all}</p>
-        
             <p>{props.speed}</p>
             <p>{props.deg}</p>
             <p>{props.gust}</p>
