@@ -1,13 +1,14 @@
 from rest_framework import serializers
-from weatherApp.models import ClimaTempo, Cidade
+from weatherApp.models import Weather, Region
 
-class ClimaTempoSerializer(serializers.ModelSerializer):
+class WeatherSerializer(serializers.ModelSerializer):
   class Meta:
-    model = ClimaTempo
-    fields = ['data', 'temperatura', 'pressao', 'humidade', 'vento', 'umidade', 'descricao', 'icon', 'cidade', 'estado', 'pais', 'latitude', 'longitude']
+    model = Weather  
+    fields = '__all__'
+    #list_select_related = ('id','description')
 
-class CidadeSerializer(serializers.ModelSerializer):
-  class Meta: 
-    model = Cidade
-    fields = ['id','nome']
-    list_select_related = ('id','nome')
+class RegionSerializer(serializers.ModelSerializer):
+  class Meta:
+    model = Region
+    fields = ['name']
+    #list_select_related = ('id','name')

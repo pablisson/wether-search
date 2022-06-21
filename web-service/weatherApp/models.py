@@ -1,64 +1,72 @@
 from django.db import models
 from uuid import uuid4
 
-class ClimaTempo(models.Model):
-    """
-    Classe que representa a tabela ClimaTempo do banco de dados.
-    """
+class Region(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    data = models.DateField()
-    temperatura = models.DecimalField(max_digits=5, decimal_places=2)
-    pressao = models.DecimalField(max_digits=5, decimal_places=2)
-    humidade = models.DecimalField(max_digits=5, decimal_places=2)
-    vento = models.DecimalField(max_digits=5, decimal_places=2)
-    umidade = models.DecimalField(max_digits=5, decimal_places=2)
-    descricao = models.CharField(max_length=100)
-    icon = models.CharField(max_length=100)
-    cidade = models.CharField(max_length=100)
-    estado = models.CharField(max_length=100)
-    pais = models.CharField(max_length=100)
-    latitude = models.DecimalField(max_digits=5, decimal_places=2)
-    longitude = models.DecimalField(max_digits=5, decimal_places=2)
+    num_region = models.CharField(max_length=36, null=True)
+    name = models.CharField(max_length=200, null=True)
+    temp = models.CharField(max_length=8, null=True)
+    lat = models.CharField(max_length=10, null=True)
+    lon = models.CharField(max_length=10, null=True)
+    country = models.CharField(max_length=150, null=True)
+    population = models.CharField(max_length=10, null=True)
+    timezone = models.CharField(max_length=10, null=True)
+    sunrise = models.CharField(max_length=10, null=True)
+    sunset = models.CharField(max_length=10, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.descricao
-
+        return self.name
+    
     class Meta:
-        verbose_name = 'Clima Tempo'
-        verbose_name_plural = 'Climas Tempo'
+        verbose_name = 'Region'
+        verbose_name_plural = 'Regions'
         ordering = ['-created_at']
-        db_table = 'clima_tempo'
+        db_table = 'region'
         managed = True
         default_permissions = ()
         permissions = (
-            ('view_climatempo', 'Can view clima_tempo'),
+            ('view_region', 'Can view region'),
         )
 
-class Cidade(models.Model):
-    """
-    Classe que representa a tabela Cidade do banco de dados.
-    """
+class Weather(models.Model):
+    #o id fará referncia ao campo dt
     id = models.UUIDField(primary_key=True, default=uuid4, editable=False)
-    nome = models.CharField(max_length=200)
-    #estado = models.CharField(max_length=100)
-    #pais = models.CharField(max_length=100)
-    #latitude = models.DecimalField(max_digits=5, decimal_places=2)
-    #longitude = models.DecimalField(max_digits=5, decimal_places=2)
+    dt = models.CharField( max_length=36, null=True)    
+    temp = models.CharField(max_length=8, null=True)
+    feels_like = models.CharField(max_length=8, null=True)
+    temp_min = models.CharField(max_length=8, null=True)
+    temp_max = models.CharField(max_length=8, null=True)
+    pressure = models.CharField(max_length=8, null=True)
+    humidity = models.CharField(max_length=8, null=True)
+    description = models.CharField(max_length=200, null=True)
+    icon = models.CharField(max_length=8, null=True)
+    speed = models.CharField(max_length=8, null=True)
+    deg = models.CharField(max_length=8, null=True)
+    dt_txt = models.CharField(max_length=30, null=True) 
+    region_id = models.CharField(max_length=36, null=True)
+    region = models.CharField(max_length=200, null=True) 
+    lat = models.CharField(max_length=10, null=True)
+    lon = models.CharField(max_length=10, null=True)
+    country = models.CharField(max_length=150, null=True)
+    population = models.CharField(max_length=10, null=True)
+    timezone = models.CharField(max_length=10, null=True)
+    sunrise = models.CharField(max_length=10, null=True)
+    sunset = models.CharField(max_length=10, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     def __str__(self):
-        return self.nome
-
+        return self.description
+    
     class Meta:
-        verbose_name = 'Cidade'
-        verbose_name_plural = 'Cidades'
+        verbose_name = 'Weather'
+        verbose_name_plural = 'Weather'
         ordering = ['-created_at']
-        db_table = 'cidade'
+        db_table = 'weather'
         managed = True
         default_permissions = ()
         permissions = (
-            ('view_cidade', 'Can view cidade'),
+            ('view_weather', 'Can view weather'),
         )

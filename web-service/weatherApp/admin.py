@@ -1,19 +1,17 @@
 from django.contrib import admin
-from weatherApp.models import ClimaTempo
+from weatherApp.models import Weather
 
-class ClimaTemposAdmin(admin.ModelAdmin):
-    list_display = ('id', 'data', 'temperatura', 'pressao', 'humidade', 'vento', 'umidade', 'descricao', 'icon', 'cidade', 'estado', 'pais', 'latitude', 'longitude')
-    list_filter = ('data', 'temperatura', 'pressao', 'humidade', 'vento', 'umidade', 'descricao', 'icon', 'cidade', 'estado', 'pais', 'latitude', 'longitude')
-    search_fields = ('id','data', 'temperatura', 'pressao', 'humidade', 'vento', 'umidade', 'descricao', 'icon', 'cidade', 'estado', 'pais', 'latitude', 'longitude')
-    ordering = ('-data',)
-    date_hierarchy = 'data'
+class WeathersAdmin(admin.ModelAdmin):
+    list_display = ('id', 'temp', 'feels_like', 'temp_min', 'temp_max', 'humidity', 'speed', 'region','lat', 'lon', 'country', 'population', 'timezone', 'sunrise', 'sunset', 'description')
+    list_filter = ('id', 'temp', 'feels_like', 'temp_min', 'temp_max', 'humidity', 'speed', 'region', 'lat', 'lon', 'country', 'population', 'timezone', 'sunrise', 'sunset', 'description')
+    search_fields = ( 'temp', 'feels_like', 'temp_min', 'temp_max', 'humidity', 'speed', 'region', 'lat', 'lon', 'country', 'population', 'timezone', 'sunrise', 'sunset', 'description')
+    ordering = ('-created_at',)
+    date_hierarchy = 'created_at'
     list_per_page = 10
     list_max_show_all = 10
-    list_editable = ('temperatura', 'pressao', 'humidade', 'vento', 'umidade', 'descricao', 'icon', 'cidade', 'estado', 'pais', 'latitude', 'longitude')
-    #list_display_links = ('id','descricao', 'cidade', 'estado', 'pais')
-    #list_select_related = ('data', 'temperatura', 'pressao', 'humidade', 'vento', 'umidade', 'descricao', 'icon', 'cidade', 'estado', 'pais', 'latitude', 'longitude')
+    list_editable = ('temp', 'feels_like', 'temp_min', 'temp_max', 'humidity', 'speed', 'region', 'lat', 'lon', 'country', 'population', 'timezone', 'sunrise', 'sunset', 'description')
     list_per_page = 10
     list_max_show_all = 10
-    list_editable = ('temperatura', 'pressao', 'humidade', 'vento', 'umidade', 'descricao', 'icon', 'cidade', 'estado', 'pais', 'latitude', 'longitude')
+    
 
-admin.site.register(ClimaTempo, ClimaTemposAdmin)
+admin.site.register(Weather, WeathersAdmin)
