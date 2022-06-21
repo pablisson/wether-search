@@ -59,12 +59,17 @@ class CidadeViewSet(viewsets.ModelViewSet):
 
       print(item)
       print(item.values('nome'))
-
       print(region)
-      manager_data = url_generic_search()
 
-      url = manager_data.join_generic_url(region)
-      print(url)
+      #manager_data = url_generic_search()
+      #url = manager_data.join_generic_url(region)
+      #print(url)
+      viewer_list = items_for_viewer()
+      viewer_list.create_jason_list(region)
+
+      # manager_data = json_manager()
+      # manager_data.get_weather_by_region(region)      #print(manager_data.get_item_from_json_all())
+      # print(manager_data.get_item_from_json(0))
 
       return Response(item.values('nome'))
     return Response(serializer.data)
@@ -73,8 +78,8 @@ class CidadeViewSet(viewsets.ModelViewSet):
 
 class url_generic_search:
   def __init__(self):
-    self.base_url = 'http://api.openweathermap.org/data/2.5/weather?q='
-    self.params = {'pt_br&APPID' : '4b901a81f4942afae9ee8d6657e3e0dd', 'units' : 'metric'} 
+    self.base_url = 'http://api.openweathermap.org/data/2.5/forecast?pt_br&'
+    self.params = {'APPID' : '4b901a81f4942afae9ee8d6657e3e0dd', 'units' : 'metric'} 
     self.json_response = None      
 
   def get_json_from_url(self, url):
@@ -86,9 +91,78 @@ class url_generic_search:
     self.params['q'] = region
     return self.base_url + urllib.parse.urlencode(self.params)
   
-  def get_weather_by_region(self, city):
-    url = self.join_generic_url(city)
-    self.json_response = self.get_json_from_url(url)    
-    return self.json_response
   
+class json_manager:
+  def __init__(self):
+    self.json_response = None
+    self.item_name = 'list'
+  
+  def get_weather_by_region(self, region):
+    search_data = url_generic_search()
+    url = search_data.join_generic_url(region)
+    self.json_response = search_data.get_json_from_url(url) 
+    return self.json_response
 
+  def get_item_from_json_all(self):    
+    return jsonpath.jsonpath(self.json_response, self.item_name)
+
+  def get_item_from_json(self, i):
+    main_item = "".join([self.item_name,"[",str(i),"]"])
+    print(main_item)
+    return jsonpath.jsonpath(self.json_response, main_item)
+
+
+class items_for_viewer:
+  def __init__(self):
+    self.items = {}
+    self.labels = ['dt_txt', 'temp', 'feels_like', 'temp_min','temp_max','pressure','humidity','description','icon','speed','deg','all']
+  
+  def add_item(self, label, item):
+    self.items[label] = item
+  
+  def create_jason_list(self, region):
+    manager_data = json_manager()
+    manager_data.get_weather_by_region(region)  
+    itemAux = manager_data.get_item_from_json(0)
+    """
+    #self.add_item(self.labels[0], itemAux[0][self.labels[0]])
+    self.items[self.labels[0]] = itemAux[0][self.labels[0]]
+    self.items[self.labels[1]] = itemAux[0]['main'][self.labels[1]]
+    self.items[self.labels[2]] = itemAux[0]['main'][self.labels[2]]
+    self.items[self.labels[3]] = itemAux[0]['main'][self.labels[3]]
+    self.items[self.labels[4]] = itemAux[0]['main'][self.labels[4]]
+    self.items[self.labels[5]] = itemAux[0]['main'][self.labels[5]]
+    self.items[self.labels[6]] = itemAux[0]['main'][self.labels[6]]
+
+    self.items[self.labels[7]] = itemAux[0]['weather'][0][self.labels[7]]
+    
+    self.items[self.labels[8]] = itemAux[0]['weather'][0][self.labels[8]]
+    self.items[self.labels[9]] = itemAux[0]['wind'][self.labels[9]]
+    self.items[self.labels[10]] = itemAux[0]['wind'][self.labels[10]]
+    self.items[self.labels[11]] = itemAux[0]['clouds'][self.labels[11]]
+"""
+
+    print(self.items)
+    for i in range(0,5):
+      print(i)
+      
+    
+    for i in range(0, 5): 
+      itemAux = manager_data.get_item_from_json(i)
+      print(itemAux)
+      self.items[self.labels[0]] = itemAux[i][self.labels[0]]
+      self.items[self.labels[1]] = itemAux[i]['main'][self.labels[1]]
+      self.items[self.labels[2]] = itemAux[i]['main'][self.labels[2]]
+      self.items[self.labels[3]] = itemAux[i]['main'][self.labels[3]]
+      self.items[self.labels[4]] = itemAux[i]['main'][self.labels[4]]
+      self.items[self.labels[5]] = itemAux[i]['main'][self.labels[5]]
+      self.items[self.labels[6]] = itemAux[i]['main'][self.labels[6]]
+      self.items[self.labels[7]] = itemAux[i]['weather'][self.labels[7]]
+      self.items[self.labels[8]] = itemAux[i]['weather'][self.labels[8]]
+      self.items[self.labels[9]] = itemAux[i]['wind'][self.labels[9]]
+      self.items[self.labels[10]] = itemAux[i]['wind'][self.labels[10]]
+      self.items[self.labels[11]] = itemAux[i]['clouds'][self.labels[11]]
+    
+  
+    return self.items
+    
