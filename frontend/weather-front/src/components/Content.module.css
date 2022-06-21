@@ -1,0 +1,41 @@
+.content{
+  height: 685px;
+  padding: 20px;
+}
+
+.colunas{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  
+}
+
+.um {
+  grid-column: 1 / 7;
+  grid-row: 1;
+}
+.dois {
+  grid-column: 2 / 7;
+  grid-row: 1;
+}
+.tres {
+  grid-column: 3 / 7;
+  grid-row: 1;
+}
+.quatro {
+  grid-column: 4 / 7;
+  grid-row: 1;
+}
+.cinco {
+  grid-column: 5 / 7;
+  grid-row: 41;
+}
+.seis {
+  grid-column: 6 / 7;
+  grid-row: 1;
+}
+
+.sete{
+  grid-column: 7 / 7;
+  grid-row: 1;
+}

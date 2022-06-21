@@ -1,0 +1,10 @@
+.sidebar{
+  background-color: var(--purple-300) ;
+  border-radius: 15px;
+  height: 685px;
+  padding: 20px;
+  opacity: 0.9;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
