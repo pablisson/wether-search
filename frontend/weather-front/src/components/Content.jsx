@@ -24,16 +24,29 @@ export function Content(){
   }
 
   const handleSearchBD = async () => {
- 
-    setListAux(list.map((item) => 
-      console.log('lista', item.dt),
+    
+    for(const item of list){
+      //console.log('item',item)
+      const jsonItem = {
+          "dt_txt": item["dt_txt"].toString(),
+          "temp" : item["temp"].toString(),
+          "feels_like" : item["feels_like"].toString(),
+          "temp_min" : item["temp_min"].toString(),
+          "temp_max" : item["temp_max"].toString(),
+          "pressure" : item["pressure"].toString(),
+          "humidity" : item["humidity"].toString(),          
+          "description" : item["description"].toString(),
+          "icon" : item["icon"].toString(),
+          "speed" : item["speed"].toString(),
+          "deg" : item["deg"].toString(),
+          "all" : item["all"].toString(),
+          "dt" : item["dt"].toString()
+      };
+      await api.postWeather(jsonItem)
+      
+      console.log(jsonItem);
+    }
 
-      await api.postWeather(item),
- 
-
-  
-      )
-    )
 
   };
 
@@ -98,7 +111,7 @@ export function Content(){
         <h3>Seja bem vindo</h3>
         <h1>Selecione uma Cidade</h1>
         <InputRegion onChangeRegion={event => onChangeRegion(event.target.value)} value={region}/>
-        <ButtonSendRegion onClick={() => handleSearch(region)}  label="Enviar"/>   
+        <ButtonSendRegion onClick={() => handleSearch(region)}  label="Buscar Dados"/>   
         <Checkbox label="Buscar no Banco" value={checked} onChange={event => handleChange(event.target.value)} /> 
 
         <ButtonSendRegion onClick={() => handleSearchBD()}  label="Salvar no Banco"/>        
