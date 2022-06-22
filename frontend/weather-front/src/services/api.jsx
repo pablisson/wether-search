@@ -6,10 +6,10 @@ const apiAxios = axios.create({
 });
 
 export const api = {
-  postWeather: async (region) => {
+  postWeather: async (item) => {
     try {
       console.log('region:', region);
-      const data = await apiAxios.post('weather/',{'nome':region})
+      const data = await apiAxios.post('weather/', item)
       console.log('data:', data);
       return data;
     } catch (error){

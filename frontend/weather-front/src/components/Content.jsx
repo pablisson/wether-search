@@ -24,17 +24,18 @@ export function Content(){
   }
 
   const handleSearchBD = async () => {
-    //useEffect(() => {
-      setListAux(list.map((item, index) => 
-        console.log('lista', item.dt)
+ 
+    setListAux(list.map((item) => 
+      console.log('lista', item.dt),
+
+      await api.postWeather(item),
+ 
 
   
-    ));
-  //}, [list])
-    //const {data} = await api.getWeather(region,checked);
-    //console.log('list:', list);
-    //setList(data);    
-  }
+      )
+    )
+
+  };
 
   const handleSearch = async () => {
     const {data} = await api.getWeather(region,checked);
@@ -100,7 +101,7 @@ export function Content(){
         <ButtonSendRegion onClick={() => handleSearch(region)}  label="Enviar"/>   
         <Checkbox label="Buscar no Banco" value={checked} onChange={event => handleChange(event.target.value)} /> 
 
-        <ButtonSendRegion onClick={() => handleSearchBD(region)}  label="Salvar no Banco"/>        
+        <ButtonSendRegion onClick={() => handleSearchBD()}  label="Salvar no Banco"/>        
         
         
         <div className={styles.colunas}>
