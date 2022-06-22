@@ -1,11 +1,14 @@
-.wrapper {
+.container{
+  background: linear-gradient(180deg, var(--purple-200) 0%, var(--purple-800) 100%);
+}
+
+.content {
   max-width: 100rem;
   margin: 2rem auto;
   padding: 0 1rem;
 
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap:10px;
-
-
+  display:inline-flex;
+  border:3px solid #fff;
+  flex-direction:row;
 }
+

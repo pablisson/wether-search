@@ -4,10 +4,12 @@
 }
 
 .colunas{
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
-  
+  gap: 5px; */
+  display:inline-flex;
+  border:3px solid #fff;
+  flex-direction:row;
 }
 .fundo{
   background-color: var(--purple-800);

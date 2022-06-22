@@ -25,7 +25,34 @@ body{
   font-style: normal;
   color: #fff;
   -webkit-font-smoothing: antialiased;
-  background: var(--purple-800);
-  
-  height: 95.5vh;
+
+  /* height: 95.5vh; */
+}
+
+html{
+  @media(max-width: 1080px){
+    font-size: 93.75%; /*16 * 0,9375 = 15px */
+  }
+
+  @media(max-width: 720px){
+    font-size: 87.5%; /*16 * 0,875 = 14px */
+  }
+}
+
+body, input, textarea, button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
+
+[diabled]{
+  opacity: 0.6;
+  cursor: not-allowed;
 }

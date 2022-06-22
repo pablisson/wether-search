@@ -1,24 +1,23 @@
-import { Content } from "./components/Content";
+import { Content } from "./components/ContentWeather";
 import { Sidebar } from "./components/Sidebar";
 
-import './global.css'
+import './styles/global.css'
 import styles from './App.module.css'
 
 export function App() {
   return (
-    <div>
-      
-      <div className={styles.wrapper}>
-        <aside>
-          <Sidebar/>
-        </aside>
+    <>
+      <div className={styles.container}>
+        <div className={styles.content}>
 
-        <main>
-          <Content/>
-        </main>
+            <Sidebar/>
 
+            <Content/>
+
+
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
