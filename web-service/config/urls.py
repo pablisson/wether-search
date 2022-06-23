@@ -15,14 +15,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from weatherApp.views import WeatherViewSet, RegionViewSet
+from weatherApp.views import WeatherViewSet, RegionViewSet, UpdateDeletePostViewSet
 from rest_framework import routers
 
 router = routers.DefaultRouter()
 router.register(r'weather', WeatherViewSet, basename='weather')
 router.register(r'region', RegionViewSet, basename='region')
+#router.register(r'delete/<int:pk>', UpdateDeletePostViewSet.as_view(), basename='delete')
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include(router.urls)),
+
+    path('delete/<int:pk>', UpdateDeletePostViewSet.as_view())
+    #path('post/<int:pk>', UpdateDeletePostViewSet()),
 ]
