@@ -230,10 +230,10 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🦸 Autor
 
-<a href="https://blog.rocketseat.com.br/author/thiago/">
+
  <img style="border-radius: 50%;" src="https://media-exp1.licdn.com/dms/image/C4D03AQFICWmbaQJtJw/profile-displayphoto-shrink_200_200/0/1516768728498?e=2147483647&v=beta&t=GtFjq-GOh1stWfxZZEc5ICR8yvwXfxelw58E8pX1H10" width="100px;" alt=""/>
  <br />
- <sub><b>Thiago Marinho</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago/" title="Rocketseat">🚀</a>
+ <sub><b>Páblisson Araújo</b></sub> 🚀
  <br />
 
 [![Linkedin Badge](https://img.shields.io/badge/-Pablisson-blue?style=flat-square&logo=Linkedin&logoColor=white&link=www.linkedin.com/in/páblisson-araujo)](www.linkedin.com/in/páblisson-araujo) 
