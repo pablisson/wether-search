@@ -1,0 +1,26 @@
+.imgtype{
+  width: 22%;
+  vertical-align: middle;
+  
+}
+
+.propweather{
+  font-size: 0.8rem;
+
+}
+span, p{
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+
+.topweather{
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+}
+.temp{
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}

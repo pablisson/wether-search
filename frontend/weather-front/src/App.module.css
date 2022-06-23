@@ -1,5 +1,5 @@
 .container{
-  background: linear-gradient(180deg, var(--purple-200) 0%, var(--purple-800) 100%);
+  background: linear-gradient(180deg, var(--purple-200) 0%, var(--purple-300) 100%);
 }
 
 .content {
@@ -7,8 +7,7 @@
   margin: 2rem auto;
   padding: 0 1rem;
 
-  display:inline-flex;
-  border:3px solid #fff;
+  display:inline-flex;  
   flex-direction:row;
 }
 

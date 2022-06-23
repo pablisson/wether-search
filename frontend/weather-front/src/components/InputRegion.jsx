@@ -1,3 +1,5 @@
+import styles from './InputRegion.module.css';
+
 export function InputRegion(props){
     return (
         <div>

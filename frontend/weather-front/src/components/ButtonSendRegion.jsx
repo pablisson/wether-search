@@ -1,3 +1,5 @@
+import styles from './ButtonSendRegion.module.css';
+
 export function ButtonSendRegion(props){
     return (
         <div>

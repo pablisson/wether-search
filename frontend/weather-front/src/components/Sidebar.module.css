@@ -1,6 +1,7 @@
 .sidebar{
   background-color: var(--purple-300) ;
   border-radius: 15px;
+  width: 10rem;
   height: 42rem;
   
   padding: 20px;
@@ -11,7 +12,7 @@
 }
 
 .img_logo{
-  width: 92%;
+  width: 82%;
   vertical-align: middle;
 
 }

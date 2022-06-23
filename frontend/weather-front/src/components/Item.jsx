@@ -1,54 +1,56 @@
-// props: 
+import { useState, useEffect } from 'react';
+import styles from './Item.module.css';
+
+
+
 export function Item(props){
-    return (
-        <div>
-            
-            <p>{props.dt_txt}</p>
-            <p>{props.dt_txt}</p>
-            <p>{props.temp}</p>
-            <p>{props.feels_like}</p>
-            <p>{props.temp_min}</p>
-            <p>{props.temp_max}</p>
-            <p>{props.pressure}</p>
-            <p>{props.sea_level}</p>
-            <p>{props.grnd_level}</p>
-            <p>{props.humidity}</p>
-            <p>{props.description}</p>
-            <p><img src={`http://openweathermap.org/img/wn/${props.icon}@2x.png`}/></p>
-            <p>{props.all}</p>
-            <p>{props.speed}</p>
-            <p>{props.deg}</p>
-            <p>{props.gust}</p>
+  const [day, setDay] = useState('');
 
-            
-        </div>
-    );
+  function getDay(date) {
+    const d = new Date(date);
+    let dayOfWeek = d.getDay();
+    
+    switch (new Date(date).getDay()) {
+      case 0:
+        setDay("SUN");
+        break;
+      case 1:
+        setDay("MON");
+        break;
+      case 2:
+        setDay("TUE");
+        break;
+      case 3:
+        setDay("WED");
+        break;
+      case 4:
+        setDay("THU");
+        break;
+      case 5:
+        setDay("FRI");
+        break;
+      case 6:
+        setDay("SAT");
+        break;
+    }
+
+  };
+
+  useEffect(() => {
+    getDay(props.dt_txt)
+  }, [])
+  
+
+  return (
+      <div className={styles.propweather}>            
+          <div className={styles.topweather}>
+            <img className={styles.imgtype} src={`http://openweathermap.org/img/wn/${props.icon}@2x.png`}/>
+            <span >{day}</span>
+          </div>
+          <h3 className={styles.temp}>{props.temp}º</h3>
+          <p>{props.speed} m/s</p>       
+          <p>{props.humidity} %</p>
+          <p>{props.description}</p>
+      </div>
+  );
 }
-
-/*
-            <p>{props.dt_txt}</p>
-            <p>{props.dt_txt}</p>
-            <p>{props.temp}</p>
-            <p>{props.feels_like}</p>
-            <p>{props.temp_min}</p>
-            <p>{props.temp_max}</p>
-            <p>{props.pressure}</p>
-            <p>{props.sea_level}</p>
-            <p>{props.grnd_level}</p>
-            <p>{props.humidity}</p>
-            <p>{props.temp_kf}</p>
-
-        //weather
-            <p>{props.id}</p>
-            <p>{props.main}</p>
-            <p>{props.description}</p>
-            <p>{props.icon}</p>
-
-        //clouds
-            <p>{props.all}</p>
-
-        //wind
-            <p>{props.speed}</p>
-            <p>{props.deg}</p>
-            <p>{props.gust}</p>
-*/
