@@ -39,7 +39,7 @@ Tabela de conteúdos
 
 ## 💻 Sobre o projeto
 
-🌦️ Weather search - é uma plataforma que tem por objetivo mostrar o clima da cidade em diferentes dispositivos.
+🌦️ Weather search - é uma plataforma que tem por objetivo mostrar o clima dos cinco próximos dias da cidade. A estrutura do projeto é composta por um webservice desenvolvido em python e um frontend desenvolvido em ReactJs.
 
 
 Projeto desenvolvido para linx.
@@ -48,11 +48,11 @@ Projeto desenvolvido para linx.
 
 ## ⚙️ Funcionalidades
 
-- [x] O Usuário pode buscar a sua cidade:
-  - [x] O usuário poderá visualizar o clima da semana
-  - [x] A cidade deverá ser salva no banco
-  - [x] e o endereço para que ele possa aparecer no mapa
-  - [x] além de selecionar um ou mais ítens de coleta: 
+- [x] O Usuário busca o clima dos ulmos 5 dias da cidade desejada:
+  - [x] O usuário poderá visualizar o clima dos próximos 5 dias
+  - [x] Os dados meterológicos deverão serem salvos na base de dados
+  - [x] Os dados serão visualizados no frontend
+  - [x] 
     - lâmpadas
     - pilhas e baterias
     - papéis e papelão
