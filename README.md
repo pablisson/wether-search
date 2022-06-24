@@ -133,7 +133,7 @@ No frontend utilizamos, além do Reac, React dom e React Plugin utilizamos o vit
 
 #### **Website**  ([React](https://reactjs.org/)  +  [Vite](https://vitejs.dev/guide/))
 
--   **[Vite](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
+-   **[Vite](https://vitejs.dev/guide/#trying-vite-online)**
 -   **[Cors](https://www.npmjs.com/package/cors)**
 -   **[Axios](https://github.com/axios/axios)**
 -   **[Leaflet](https://www.npmjs.com/package/cors)**
