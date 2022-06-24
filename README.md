@@ -17,12 +17,11 @@ Tabela de conteúdos
 =================
 <!--ts-->
    * [Sobre o projeto](#-sobre-o-projeto)
-   * [Funcionalidades]()
+   * [Funcionalidades](#-funcionalidades)
    * [Funcionalidades e estruturas futuras](#-funcionalidades-e-estruturas-futuras)
    * [Layout](#-layout)
-     * [Web Service](#webservice)
-     * [Web Backend](#webbackend)
-     * [Web Frontend](#webfrontend)
+     * [Web Service](#-web-service)
+     * [Web Frontend](#-web-frontend)
    * [Como executar o projeto](#-como-executar-o-projeto)
      * [Pré-requisitos](#pré-requisitos)
      * [Rodando o Backend (servidor)](#user-content--rodando-o-backend-servidor)
@@ -30,11 +29,8 @@ Tabela de conteúdos
    * [Tecnologias](#-tecnologias)
      * [WebSite](#user-content-website--react----typescript)
      * [Server](#user-content-server--nodejs----typescript)
-     * [Mobile](#user-content-mobile--react-native----typescript)
-   * [Contribuidores](#-contribuidores)
-   * [Como contribuir no projeto](#-como-contribuir-no-projeto)
    * [Autor](#-autor)
-   * [Licença](#user-content--licença)
+
 <!--te-->
 
 
