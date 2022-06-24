@@ -1,10 +1,10 @@
 
 <h1 align="center">
-     🌦️ <a href="#" alt="app weather search"> Weather search </a>
+     🌦️ <a href="#" alt="app weather search"> Weather Search </a>
 </h1>
 
 <h3 align="center">
-    O clima da sua cidade na semana.  
+    O clima da sua cidade na semana
 </h3>
 
 
@@ -26,6 +26,7 @@ Tabela de conteúdos
    * [Como executar o projeto](#-como-executar-o-projeto)     
      * [Rodando o Backend (servidor)](#user-content--rodando-o-backend-servidor)
      * [Rodando a aplicação web (Frontend)](#user-content--rodando-a-aplicação-web-frontend)
+   * [Desafios Superados](#-desafios-superados)
    * [Autor](#-autor)
 
 <!--te-->
@@ -33,16 +34,16 @@ Tabela de conteúdos
 
 ## 💻 Sobre o projeto
 
-🌦️ Weather search - é uma plataforma que tem por objetivo mostrar o clima dos cinco próximos dias da cidade. A estrutura do projeto é composta por um webservice desenvolvido em python e um frontend desenvolvido em ReactJs.
+🌦️ Weather Search - é uma plataforma que tem por objetivo mostrar o clima dos cinco próximos dias da cidade. A estrutura do projeto é composta por um webservice desenvolvido em Python e um frontend desenvolvido em ReactJs.
 
 
 ---
 
 ## ⚙️ Funcionalidades
 
-- [x] O Usuário busca o clima dos ulmos 5 dias da cidade desejada:
+- [x] O Usuário busca o clima da cidade desejada:
   - [x] O usuário poderá visualizar o clima dos próximos 5 dias
-  - [x] Os dados meterológicos poderão serem salvos na base de dados utilizando o botão salvar
+  - [x] Os dados meterológicos poderão ser salvos na base de dados utilizando o botão "Salvar no Banco"
   - [x] Os dados serão visualizados no frontend
 
 
@@ -156,10 +157,11 @@ Este projeto é divido em duas partes:
 $ git clone git@github.com:pablisson/wether-search.git
 
 # Acesse a pasta do projeto no terminal/powershell
-$ cd README-ecoleta
-
 # Vá para a pasta server
-$ cd server
+$ cd web-service
+
+# Execute o comando para subir o servidor
+$ python manage.py runserver
 
 # Instale as dependências
 $ npm install
@@ -175,21 +177,22 @@ $ npm run dev:server
 #### 🧭 Rodando a aplicação web (Frontend)
 
 ```bash
-
-# Clone este repositório
-$ git clone git@github.com:tgmarinho/README-ecoleta.git
-
-# Acesse a pasta do projeto no seu terminal/cmd
-$ cd README-ecoleta
-
-# Vá para a pasta da aplicação Front End
-$ cd web
+# Uma vez que os dois projetos então dentro do mesmo repositório 
+# basta ir para a pasta da aplicação Front End
+$ cd frontend\weather-front\
 
 # Instale as dependências
 $ npm install
 
+# Instale o axios
+$ npm install axios
+
+# Instale o cors
+$ npm install cors
+
 # Execute a aplicação em modo de desenvolvimento
-$ npm run start
+$ npm run dev
+
 
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
@@ -208,6 +211,10 @@ $ npm run start
 
 
 ---
+
+## 🤹🏻‍♀️ Desafios Superados
+No inicio do projeto não possuia nenhum conhecimento em Python e pouco conhecimento em react. Foi uma grande experiência e superação poder fazer essa aplicação e aprensentá-a. Gerou em mim um desejo de avançar na mesma, fazendo os ajustes necessários e aumentando a complexidade
+
 
 ## 🦸 Autor
 
