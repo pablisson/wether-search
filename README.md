@@ -51,7 +51,8 @@ Tabela de conteúdos
 
 ## 🛫 Funcionalidades e estruturas futuras
 
-- [ ] Fazer um refactory no código, pois um dos pontos a serem melhorados são as 3 classes responsáveis por pegar os dados da página web e gerar um arquivo json. É possível aplicar um padrão de projeto no qual deixe a classe mais flexível, podendo gerar os dados não somente em json, mas também em xml ou alguma outra estrutura.
+- [ ] Fazer um refactory no código: um dos pontos a serem melhorados são as 3 classes responsáveis por pegar os dados da página web e gerar um arquivo json.
+- [ ] Aplicar um padrão de projeto o qual deixe a classe mais flexível, podendo gerar os dados não somente em json, mas também em xml ou alguma outra estrutura.
 - [ ] Dividir as informações em modelos distintos e estabelecer um relacionamento com os mesmos.
 - [ ] Gerar um nova tela com o histórico das temperaturas já salvas.
 - [ ] Gerar um gráfico com as variações da temperatura.
@@ -214,7 +215,7 @@ $ npm run dev
 ---
 
 ## 🤹🏻‍♀️ Desafios Superados
-No inicio do projeto não possuia nenhum conhecimento em Python e pouco conhecimento em react. Foi uma grande experiência e superação poder fazer essa aplicação e aprensentá-a. Gerou em mim um desejo de avançar na mesma, fazendo os ajustes necessários e aumentando a complexidade
+Em razão de não possuir nenhum conhecimento em Python e pouco em react, este projeto se apresentou como uma grande e generosa experiência de conhecimento e superação. Elaborar a aplicação e apresentá-la adequadamente e com qualidade, gerou em mim o desejo de avançar e melhorar a mesma, vislubrando ajustes e aumento da complexidade, os quais podem proporcionar uma melhor e mais eficaz uso da mesma.
 
 
 ## 🦸 Autor
