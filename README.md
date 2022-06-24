@@ -117,7 +117,10 @@ $ pip freeze
 # O config é opcional, apenas por questão organização para deixar tudo relacionado às configurações do projeto
 $ django-admin startproject config
 
-# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+# Para subir o servidor basta executar esse comando
+$ python manage.py runserver
+
+# A aplicação será aberta na porta:8000 - acesse http://localhost:8000
 
 ```
 
