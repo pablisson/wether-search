@@ -51,11 +51,11 @@ Tabela de conteúdos
 
 ## 🛫 Funcionalidades e estruturas futuras
 
-- [ ] Fazer um refactory no código. Um dos pontos a serem melhorados são as 3 classes responsáveis por pegar os dados da página web e gerar um arquivo json. É possível Aplicar um padrão de projeto no qual deixe a classe mais flexivel podendo gerar o arquivo não somente em json mas também em xml ou alguma outra estrutura.
-- [ ] Dividir as informações em modelos distintos e estabelecer um relacionamento com os mesmos
+- [ ] Fazer um refactory no código, pois um dos pontos a serem melhorados são as 3 classes responsáveis por pegar os dados da página web e gerar um arquivo json. É possível aplicar um padrão de projeto no qual deixe a classe mais flexível, podendo gerar os dados não somente em json, mas também em xml ou alguma outra estrutura.
+- [ ] Dividir as informações em modelos distintos e estabelecer um relacionamento com os mesmos.
 - [ ] Gerar um nova tela com o histórico das temperaturas já salvas.
-- [ ] Gerar um gráfico com as variações da temperatura
-- [ ] Gerar mais segurança na aplicação encapsular o token utilizando na api para buscar os dados da temperatura
+- [ ] Gerar um gráfico com as variações da temperatura.
+- [ ] Gerar mais segurança na aplicação e encapsular o token utilizado na api busca os dados da temperatura.
 
 ---
 
