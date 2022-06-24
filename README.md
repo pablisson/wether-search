@@ -48,13 +48,9 @@ Tabela de conteúdos
 
 - [x] O Usuário busca o clima dos ulmos 5 dias da cidade desejada:
   - [x] O usuário poderá visualizar o clima dos próximos 5 dias
-  - [x] Os dados meterológicos deverão serem salvos na base de dados
+  - [x] Os dados meterológicos poderão serem salvos na base de dados utilizando o botão salvar
   - [x] Os dados serão visualizados no frontend
 
-
-- [x] Os usuários tem acesso ao aplicativo móvel, onde podem:
-  - [x] navegar pelo mapa para ver as instituições cadastradas
-  - [x] entrar em contato com a entidade através do E-mail ou do WhatsApp
 
 ---
 
@@ -79,7 +75,7 @@ Este projeto é divido em duas partes:
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e o [python](https://www.python.org/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 #### 🎲 Rodando o Backend (servidor)
