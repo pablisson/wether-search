@@ -41,9 +41,9 @@ Tabela de conteúdos
 
 ## ⚙️ Funcionalidades
 
-- [x] O Usuário busca o clima dos últimos 5 dias da cidade desejada:
+- [x] O Usuário busca o clima da cidade desejada:
   - [x] O usuário poderá visualizar o clima dos próximos 5 dias
-  - [x] Os dados meterológicos poderão serem salvos na base de dados utilizando o botão salvar
+  - [x] Os dados meterológicos poderão ser salvos na base de dados utilizando o botão Salvar
   - [x] Os dados serão visualizados no frontend
 
 
