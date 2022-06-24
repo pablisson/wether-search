@@ -42,8 +42,6 @@ Tabela de conteúdos
 🌦️ Weather search - é uma plataforma que tem por objetivo mostrar o clima dos cinco próximos dias da cidade. A estrutura do projeto é composta por um webservice desenvolvido em python e um frontend desenvolvido em ReactJs.
 
 
-Projeto desenvolvido para linx.
-
 ---
 
 ## ⚙️ Funcionalidades
@@ -52,13 +50,7 @@ Projeto desenvolvido para linx.
   - [x] O usuário poderá visualizar o clima dos próximos 5 dias
   - [x] Os dados meterológicos deverão serem salvos na base de dados
   - [x] Os dados serão visualizados no frontend
-  - [x] 
-    - lâmpadas
-    - pilhas e baterias
-    - papéis e papelão
-    - resíduos eletrônicos
-    - resíduos orgânicos
-    - óleo de cozinha
+
 
 - [x] Os usuários tem acesso ao aplicativo móvel, onde podem:
   - [x] navegar pelo mapa para ver as instituições cadastradas
@@ -66,45 +58,21 @@ Projeto desenvolvido para linx.
 
 ---
 
-## 🎨 Layout
+## 🛫 Funcionalidades Futuras
 
-O layout da aplicação está disponível no Figma:
-
-<a href="https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta?node-id=136%3A546">
-  <img alt="Made by tgmarinho" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
-</a>
+- [x] Reestruturar a classe que pega os dados da página web e gera um arquivo json. Aplicar um padrão de projeto que permita a definição de geração de vários tipos de arquivos
+ - [x] navegar pelo mapa para ver as instituições cadastradas
+ - [x] entrar em contato com a entidade através do E-mail ou do WhatsApp
 
 
-### webservice
 
-<p align="center">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/home-mobile.png" width="200px">
-
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/detalhes-mobile.svg" width="200px">
-</p>
-
-### webbackend
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/web.svg" width="400px">
-
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/sucesso-web.svg" width="400px">
-</p>
-
-### webfrontend
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/web.svg" width="400px">
-
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/sucesso-web.svg" width="400px">
-</p>
 ---
 
 ## 🚀 Como executar o projeto
 
 Este projeto é divido em três partes:
 1. Backend (pasta server) 
-2. Frontend (pasta web)
-3. Mobile (pasta mobile)
+2. Frontend (pasta web))
 
 💡Tanto o Frontend quanto o Mobile precisam que o Backend esteja sendo executado para funcionar.
 
