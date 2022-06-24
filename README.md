@@ -51,11 +51,11 @@ Tabela de conteúdos
 
 ## 🛫 Funcionalidades e estruturas futuras
 
-- [ ] Fazer um refactory no código. Um dos pontos a serem melhorados são as 3 classes responsáveis por pegar os dados da página web e gerar um arquivo json. É possível Aplicar um padrão de projeto no qual deixe a classe mais flexivel podendo gerar o arquivo não somente em json mas também em xml ou alguma outra estrutura.
-- [ ] Dividir as informações em modelos distintos e estabelecer um relacionamento com os mesmos
+- [ ] Fazer um refactory no código, pois um dos pontos a serem melhorados são as 3 classes responsáveis por pegar os dados da página web e gerar um arquivo json. É possível aplicar um padrão de projeto no qual deixe a classe mais flexível, podendo gerar os dados não somente em json, mas também em xml ou alguma outra estrutura.
+- [ ] Dividir as informações em modelos distintos e estabelecer um relacionamento com os mesmos.
 - [ ] Gerar um nova tela com o histórico das temperaturas já salvas.
-- [ ] Gerar um gráfico com as variações da temperatura
-- [ ] Gerar mais segurança na aplicação encapsular o token utilizando na api para buscar os dados da temperatura
+- [ ] Gerar um gráfico com as variações da temperatura.
+- [ ] Gerar mais segurança na aplicação e encapsular o token utilizado na api busca os dados da temperatura.
 
 ---
 
@@ -160,16 +160,17 @@ $ git clone git@github.com:pablisson/wether-search.git
 # Vá para a pasta server
 $ cd web-service
 
+# Crie a estrutura do banco de dados
+$ python manage.py makemigrations
+
+# Cria os dados no banco de dados
+$ python manage.py migrate
+
 # Execute o comando para subir o servidor
 $ python manage.py runserver
 
-# Instale as dependências
-$ npm install
 
-# Execute a aplicação em modo de desenvolvimento
-$ npm run dev:server
-
-# O servidor inciará na porta:3333 - acesse http://localhost:3333 
+# O servidor inciará na porta:8000 - acesse http://localhost:8000 
 
 ```
 
