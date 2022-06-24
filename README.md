@@ -58,11 +58,11 @@ Tabela de conteúdos
 
 ---
 
-## 🛫 Funcionalidades Futuras
+## 🛫 Funcionalidades e estruturas futuras
 
-- [x] Reestruturar a classe que pega os dados da página web e gera um arquivo json. Aplicar um padrão de projeto que permita a definição de geração de vários tipos de arquivos
- - [x] navegar pelo mapa para ver as instituições cadastradas
- - [x] entrar em contato com a entidade através do E-mail ou do WhatsApp
+- [x] Fazer um refactory no código. Um dos pontos a serem melhorados são as 3 classes responsáveis por pegar os dados da página web e gerar um arquivo json. É possível Aplicar um padrão de projeto no qual deixe a classe mais flexivel podendo gerar o arquivo não somente em json mas também em xml ou alguma outra estrutura.
+- [x] Gerar um nova tela com o histórico das temperaturas já salvas.
+- [x] entrar em contato com a entidade através do E-mail ou do WhatsApp
 
 
 
@@ -70,7 +70,7 @@ Tabela de conteúdos
 
 ## 🚀 Como executar o projeto
 
-Este projeto é divido em três partes:
+Este projeto é divido em duas partes:
 1. Backend (pasta server) 
 2. Frontend (pasta web))
 
