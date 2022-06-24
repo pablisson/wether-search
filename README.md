@@ -59,7 +59,7 @@ Tabela de conteúdos
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
-No frontend utilizamos, além do Reac, React dom e React Plugin utilizamos o vite que é utilizado para substituir o web pack e o babel, fazendo com que os navegadores entendam a última versão dos scripts utilizados além de entender importações entre arquivos javaScript
+No frontend utilizamos, além do Reac, React dom e React Plugin utilizamos o vite que é utilizado para substituir o web pack e o babel, fazendo com que os navegadores entendam a última versão dos scripts utilizados além de entender importações entre arquivos javaScript. Com vite algumas coisas já vem configuradas como o fast refresh, que alterará a nossa aplicação visual no momento em que o novo código for salvo.
 
 ### Pré-requisitos
 
@@ -79,17 +79,11 @@ $ npm create vite@latest
 # 2 - "Select a framework", escolha react
 # 3 - "Select a varian", escolha react (a opção sem typeScript)
 
-# Acesse a pasta do projeto no seu terminal/cmd
-$ cd README-ecoleta
-
-# Vá para a pasta da aplicação Front End
-$ cd web
-
-# Instale as dependências
+# Instalar as dependências. Aqui será intalado o axios
 $ npm install
 
 # Execute a aplicação em modo de desenvolvimento
-$ npm run start
+$ npm run dev
 
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
@@ -97,10 +91,9 @@ $ npm run start
 -   **[Vite](https://vitejs.dev/guide/#trying-vite-online)**
 -   **[Axios](https://github.com/axios/axios)**
 
-
 > Veja o arquivo   [package.json](https://github.com/pablisson/wether-search/blob/main/frontend/weather-front/package.json)
 
-#### [](https://github.com/tgmarinho/Ecoleta#server-nodejs--typescript)**Server**  ([NodeJS](https://nodejs.org/en/)  +  [TypeScript](https://www.typescriptlang.org/))
+#### ***Backend***[](https://github.com/tgmarinho/Ecoleta#server-nodejs--typescript)**Server**  ([NodeJS](https://nodejs.org/en/)  +  [TypeScript](https://www.typescriptlang.org/))
 
 -   **[Express](https://expressjs.com/)**
 -   **[CORS](https://expressjs.com/en/resources/middleware/cors.html)**
