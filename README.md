@@ -200,7 +200,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
  <sub><b>Páblisson Araújo</b></sub> 🚀
  <br />
 
-<a href="www.linkedin.com/in/páblisson-araujo>linkedin</a>
+<a href="www.linkedin.com/in/páblisson-araujo">linkedin</a>
 
 
 ---
