@@ -14,12 +14,20 @@
   --gray-900: #121214;
 
   --green-500: #00875f;
-
+  
+  --purple-100: rgb(221, 210, 228);
   --purple-200: rgb(103,68,128);
   --purple-300: rgb(89,53,114);
   --purple-400: rgb(77, 45, 100);
   --purple-800: rgb(57,30,77);
   --purple-900: rgb(40,20,51);
+
+  --orange-100: #fccb9b;
+  --orange-200: #ffae5c;
+  --orange-300: #ef8d2a;
+  --orange-400: #ef8d2a;
+  --orange-500: #ef652b;
+  --orange-900: #ee402e;
 }
 
 body{
@@ -27,7 +35,6 @@ body{
   color: #fff;
   -webkit-font-smoothing: antialiased;
 
-  /* height: 95.5vh; */
 }
 
 html{

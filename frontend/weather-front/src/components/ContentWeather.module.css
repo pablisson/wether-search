@@ -1,5 +1,5 @@
 .container{
-  height: 42rem;
+  height: 43.28rem;
   padding: 20px;
 }
 
@@ -9,34 +9,50 @@
   flex-direction:row;
 }
 
+.h2{
+  display: inline-flex;
+  flex-direction:row;
+  font-weight: 500;
+  font-size: 1.5em;
+  font-weight: bold;
+}
 
 .colunas{
   display: inline-flex;
   flex-direction:row;
   gap: 5px;
-  margin-top: 10px;
+}
+
+.boxinline{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between ;
+
 }
 
 .boxweather{
-
   border:2px solid;
   background-color: var(--purple-300);
   border-color: var(--purple-200);
   opacity: 09;
   border-radius: 30px;
   padding: 15px 15px 15px 15px;
+  border-bottom: var(--orange-500) 2px solid;
 }
 
 .boxcurrentweather{
   border:2px solid;
-  background-color: var(--white);
-  border-color: var(--gray-900);
+  background-color: var(--purple-100);
+  border-color: var(--purple-300);
   opacity: 09;
   border-radius: 30px;
   padding: 15px 15px 15px 15px;
+  height: 8rem;
+  margin: 10px 0;
+  color: var(--purple-800);
 }
 .currrentweather{
-
   background-color: var(--purple-800);
   border-color: var(--purple-200);
   opacity: 09;

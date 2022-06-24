@@ -4,6 +4,7 @@ import styles from './ContentWeather.module.css';
 import { api } from "../services/api";
 import { InputRegion } from "./InputRegion";
 import { ButtonSendRegion } from "./ButtonSendRegion";
+import { useInsertionEffect } from "react";
 
 export function Content(){
   const [region, setRegion] = useState('');
@@ -15,7 +16,7 @@ export function Content(){
   const [currentTemp, setCurrentTemp] = useState('');
   const [currentWind, setCurrentWind] = useState('');
   const [currentlat, setCurrentlat] = useState('');
-  const [currentlong, setCurrentlong] = useState('');
+  const [currentlon, setCurrentlon] = useState('');
 
 
   const handleChange = () => {
@@ -42,7 +43,13 @@ export function Content(){
           "speed" : item["speed"].toString(),
           "deg" : item["deg"].toString(),
           "all" : item["all"].toString(),
-          "dt" : item["dt"].toString()
+          "dt" : item["dt"].toString(),
+          "lat": item["lat"].toString(),
+          "lon" : item["lon"].toString(),
+          "city" : item["city"].toString(),
+          "country": item["country"].toString(),
+          
+
       };
       await api.postWeather(jsonItem)
       
@@ -56,8 +63,11 @@ export function Content(){
     const {data} = await api.getWeather(region,checked);
     console.log('data:', data);
     setList(data);    
+    setCurrentCity(data[0].city);
+    setCurrentTemp(data[0].temp);
+    setCurrentlat(data[0].lat);
+    setCurrentlon(data[0].lon);
   }
-
 
   useEffect(() => {
     console.log('list: ', list);
@@ -81,9 +91,7 @@ export function Content(){
             deg={item.deg}
             gust={item.gust}  
           />
-        </div>
-
-      
+        </div>      
     
     ))
   }, [list])
@@ -99,14 +107,44 @@ export function Content(){
         <ButtonSendRegion onClick={() => handleSearch(region)}  label="Buscar Dados"/>           
         <ButtonSendRegion onClick={() => handleSearchBD()}  label="Salvar no Banco"/>        
       </div>
+      {list?.length > 0 &&
       <div className={styles.content}>        
         <div>
+          <div className={styles.boxcurrentweather}>
+              
+                
+                <div className={styles.boxinline}>
+
+                  <div>
+                    <div>City</div>
+                    <div className={styles.h2}>
+                      {currentCity}                
+                    </div>
+                  </div>
+
+                  <div>
+                    <div>Temperature</div>
+                    <div className={styles.h2}>
+                      {currentTemp}º                
+                    </div>
+                  </div>
+
+                  <div>
+                    <div>Coordinates</div>
+                    <div className={styles.h2}>
+                      [{currentlat} ,{currentlon}                ]
+                    </div>
+                  </div>
+
+                </div>
+            
+          </div>
           <div className={styles.colunas}>
-            {listAux}
-            <div className="boxcurrentweather">sss</div>
+            {listAux}            
           </div> 
         </div>       
       </div>
+      }
     </div>
 
 

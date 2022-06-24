@@ -1,4 +1,6 @@
 .container{
+  
+  flex: 1;
   background: linear-gradient(180deg, var(--purple-200) 0%, var(--purple-300) 100%);
 }
 
