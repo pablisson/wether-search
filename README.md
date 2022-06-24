@@ -20,10 +20,10 @@ Tabela de conteúdos
    * [Funcionalidades](#-funcionalidades)
    * [Funcionalidades e estruturas futuras](#-funcionalidades-e-estruturas-futuras)
    * [Tecnologias](#-tecnologias)
+   * * [Pré-requisitos](#pré-requisitos)
      * [WebSite](#user-content-website--react----typescript)
      * [Server](#user-content-server--nodejs----typescript)   
-   * [Como executar o projeto](#-como-executar-o-projeto)
-     * [Pré-requisitos](#pré-requisitos)
+   * [Como executar o projeto](#-como-executar-o-projeto)     
      * [Rodando o Backend (servidor)](#user-content--rodando-o-backend-servidor)
      * [Rodando a aplicação web (Frontend)](#user-content--rodando-a-aplicação-web-frontend)
    * [Autor](#-autor)
@@ -54,7 +54,61 @@ Tabela de conteúdos
 - [x] Gerar um nova tela com o histórico das temperaturas já salvas.
 - [x] entrar em contato com a entidade através do E-mail ou do WhatsApp
 
+---
 
+## 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+No frontend utilizamos, além do Reac, React dom e React Plugin utilizamos o vite que é utilizado para substituir o web pack e o babel, fazendo com que os navegadores entendam a última versão dos scripts utilizados além de entender importações entre arquivos javaScript
+
+### Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e o [python](https://www.python.org/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
+#### **Website**  ([React](https://reactjs.org/)  +  [Vite](https://vitejs.dev/guide/))
+
+A Instalação seguiu os seguintes passos
+```bash
+
+# Clone este repositório
+$ git clone git@github.com:tgmarinho/README-ecoleta.git
+
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd README-ecoleta
+
+# Vá para a pasta da aplicação Front End
+$ cd web
+
+# Instale as dependências
+$ npm install
+
+# Execute a aplicação em modo de desenvolvimento
+$ npm run start
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+
+```
+-   **[Vite](https://vitejs.dev/guide/#trying-vite-online)**
+-   **[Axios](https://github.com/axios/axios)**
+
+
+> Veja o arquivo   [package.json](https://github.com/pablisson/wether-search/blob/main/frontend/weather-front/package.json)
+
+#### [](https://github.com/tgmarinho/Ecoleta#server-nodejs--typescript)**Server**  ([NodeJS](https://nodejs.org/en/)  +  [TypeScript](https://www.typescriptlang.org/))
+
+-   **[Express](https://expressjs.com/)**
+-   **[CORS](https://expressjs.com/en/resources/middleware/cors.html)**
+-   **[KnexJS](http://knexjs.org/)**
+-   **[SQLite](https://github.com/mapbox/node-sqlite3)**
+-   **[ts-node](https://github.com/TypeStrong/ts-node)**
+-   **[dotENV](https://github.com/motdotla/dotenv)**
+-   **[Multer](https://github.com/expressjs/multer)**
+-   **[Celebrate](https://github.com/arb/celebrate)**
+-   **[Joi](https://github.com/hapijs/joi)**
+
+> Veja o arquivo [package.json](https://github.com/pablisson/wether-search/blob/main/config/settings.py)
 
 ---
 
@@ -68,11 +122,6 @@ Este projeto é divido em duas partes:
 💡O React é uma biblioteca escrita en javaScript que ao conectar com outras bibliotecas pode controlar as interfaces de usuário.
 💡O Frontend precisa que o Backend esteja sendo executado para para buscar os dados de temperatura.
 
-### Pré-requisitos
-
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e o [python](https://www.python.org/). 
-Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 #### 🎲 Rodando o Backend (servidor)
 
@@ -126,37 +175,6 @@ $ npm run start
 
 ---
 
-## 🛠 Tecnologias
-
-As seguintes ferramentas foram usadas na construção do projeto:
-No frontend utilizamos, além do Reac, React dom e React Plugin utilizamos o vite que é utilizado para substituir o web pack e o babel, fazendo com que os navegadores entendam a última versão dos scripts utilizados além de entender importações entre arquivos javaScript
-
-#### **Website**  ([React](https://reactjs.org/)  +  [Vite](https://vitejs.dev/guide/))
-
--   **[Vite](https://vitejs.dev/guide/#trying-vite-online)**
--   **[Cors](https://www.npmjs.com/package/cors)**
--   **[Axios](https://github.com/axios/axios)**
--   **[Leaflet](https://www.npmjs.com/package/cors)**
--   **[React Leaflet](https://react-leaflet.js.org/)**
--   **[React Dropzone](https://github.com/react-dropzone/react-dropzone)**
-
-> Veja o arquivo   [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/server/package.json)
-
-#### [](https://github.com/tgmarinho/Ecoleta#server-nodejs--typescript)**Server**  ([NodeJS](https://nodejs.org/en/)  +  [TypeScript](https://www.typescriptlang.org/))
-
--   **[Express](https://expressjs.com/)**
--   **[CORS](https://expressjs.com/en/resources/middleware/cors.html)**
--   **[KnexJS](http://knexjs.org/)**
--   **[SQLite](https://github.com/mapbox/node-sqlite3)**
--   **[ts-node](https://github.com/TypeStrong/ts-node)**
--   **[dotENV](https://github.com/motdotla/dotenv)**
--   **[Multer](https://github.com/expressjs/multer)**
--   **[Celebrate](https://github.com/arb/celebrate)**
--   **[Joi](https://github.com/hapijs/joi)**
-
-> Veja o arquivo [package.json](https://github.com/pablisson/wether-search/blob/main/config/settings.py)
-
-#### [](https://github.com/tgmarinho/Ecoleta#mobile-react-native--typescript)**Mobile**  ([React Native](http://www.reactnative.com/)  +  [TypeScript](https://www.typescriptlang.org/))
 
 
 #### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
