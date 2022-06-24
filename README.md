@@ -156,10 +156,11 @@ Este projeto é divido em duas partes:
 $ git clone git@github.com:pablisson/wether-search.git
 
 # Acesse a pasta do projeto no terminal/powershell
-$ cd README-ecoleta
-
 # Vá para a pasta server
-$ cd server
+$ cd web-service
+
+# Execute o comando para subir o servidor
+$ python manage.py runserver
 
 # Instale as dependências
 $ npm install
@@ -175,21 +176,22 @@ $ npm run dev:server
 #### 🧭 Rodando a aplicação web (Frontend)
 
 ```bash
-
-# Clone este repositório
-$ git clone git@github.com:tgmarinho/README-ecoleta.git
-
-# Acesse a pasta do projeto no seu terminal/cmd
-$ cd README-ecoleta
-
-# Vá para a pasta da aplicação Front End
-$ cd web
+# Uma vez que os dois projetos então dentro do mesmo repositório 
+# basta ir para a pasta da aplicação Front End
+$ cd frontend\weather-front\
 
 # Instale as dependências
 $ npm install
 
+# Instale o axios
+$ npm install axios
+
+# Instale o cors
+$ npm install cors
+
 # Execute a aplicação em modo de desenvolvimento
-$ npm run start
+$ npm run dev
+
 
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
