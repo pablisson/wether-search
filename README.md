@@ -126,13 +126,10 @@ $ python manage.py runserver
 
 -   **[Python](https://expressjs.com/)**
 -   **[Django](https://expressjs.com/en/resources/middleware/cors.html)**
--   **[KnexJS](http://knexjs.org/)**
--   **[SQLite](https://github.com/mapbox/node-sqlite3)**
 -   **[DjangoRestFramework](https://www.django-rest-framework.org/)**
--   **[jsonpath]()**
--   **[Multer](https://github.com/expressjs/multer)**
--   **[Celebrate](https://github.com/arb/celebrate)**
--   **[Joi](https://github.com/hapijs/joi)**
+-   **[jsonpath]**
+-   **[SQLite]()**
+
 
 > Veja o arquivo [package.json](https://github.com/pablisson/wether-search/blob/main/config/settings.py)
 
