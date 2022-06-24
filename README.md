@@ -61,6 +61,7 @@ Tabela de conteúdos
 As seguintes ferramentas foram usadas na construção do projeto:
 No frontend utilizamos, além do Reac, React dom e React Plugin utilizamos o vite que é utilizado para substituir o web pack e o babel, fazendo com que os navegadores entendam a última versão dos scripts utilizados além de entender importações entre arquivos javaScript. Com vite algumas coisas já vem configuradas como o fast refresh, que alterará a nossa aplicação visual no momento em que o novo código for salvo.
 
+No backend utilizamos Python com Django Rest Framework. O Django é uma biblioteca escrita em Python para criar sistemas web. O Django agrupa muitas bibliotecas e funcionalidades que agilizam o desenvolvimento e se integra no projeto.
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
@@ -69,15 +70,15 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 #### **Website**  ([React](https://reactjs.org/)  +  [Vite](https://vitejs.dev/guide/))
 
-A Instalação seguiu os seguintes passos
+A Instalação do frontend seguiu os seguintes passos
 ```bash
 
 # Crie um projeto react utilizando o vit
-$ npm create vite@latest
-# Ao executar o comando acima será solicitado as seguintes opções: 
-# 1 -"Project name", escolha o nome do projeto desejado
+# Ao executar o comando abaixo será solicitado as seguintes opções: 
+# 1 - "Project name", escolha o nome do projeto desejado
 # 2 - "Select a framework", escolha react
 # 3 - "Select a varian", escolha react (a opção sem typeScript)
+$ npm create vite@latest
 
 # Instalar as dependências. Aqui será intalado o axios
 $ npm install
@@ -94,6 +95,31 @@ $ npm run dev
 > Veja o arquivo   [package.json](https://github.com/pablisson/wether-search/blob/main/frontend/weather-front/package.json)
 
 #### **Backend / Server**  ([Python](https://www.python.org/)  +  [Django REST framework](https://www.django-rest-framework.org/)
+
+A Instalação do backend seguiu os seguintes passos
+
+```bash
+
+# Crie uma virtual env
+# O comando abaixo cria o ambiente virtual, algo parecido com um node modules 
+$ npm python -m venv ./venv	
+
+# Para ativar a venv no windows digite o comando abaixo 
+$venv/Scripts/activate.bat
+
+# Instalar as dependências. O pip é semelhante ao npm
+$ pip install django
+
+# Com o comando abaixo é possível ver as dependências utilizadas no projeto
+$ pip freeze
+
+# Para criar a aplicação será executado o comando abaixo
+# O config é opcional, apenas por questão organização para deixar tudo relacionado às configurações do projeto
+$ django-admin startproject config
+
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+
+```
 
 -   **[Express](https://expressjs.com/)**
 -   **[CORS](https://expressjs.com/en/resources/middleware/cors.html)**
