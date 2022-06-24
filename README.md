@@ -70,6 +70,8 @@ Este projeto é divido em duas partes:
 1. Backend (pasta server) 
 2. Frontend (pasta web))
 
+💡Python é uma linguagem de programação utilizadas para criar estruturas backend.
+💡O React é uma biblioteca escrita en javaScript que ao conectar com outras bibliotecas pode controlar as interfaces de usuário.
 💡O Frontend precisa que o Backend esteja sendo executado para para buscar os dados de temperatura.
 
 ### Pré-requisitos
@@ -136,8 +138,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 #### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
 
--   **[React Router Dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
--   **[React Icons](https://react-icons.github.io/react-icons/)**
+-   **[Vite]([https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom](https://vitejs.dev/guide/)**
+-   **[Cors]([https://react-icons.github.io/react-icons/](https://www.npmjs.com/package/cors)**
 -   **[Axios](https://github.com/axios/axios)**
 -   **[Leaflet](https://react-leaflet.js.org/en/)**
 -   **[React Leaflet](https://react-leaflet.js.org/)**
