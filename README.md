@@ -4,7 +4,7 @@
 </h1>
 
 <h3 align="center">
-    O clima da sua cidade na semana.  
+    O clima da sua cidade na semana
 </h3>
 
 
