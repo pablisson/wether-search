@@ -172,12 +172,10 @@ No frontend utilizamos, além do Reac, React dom e React Plugin utilizamos o vit
 
 #### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
 
--   WSL:  Subsistema ubuntu no windows
--   Power Shell:  **[Leaflet](https://react-leaflet.js.org/en/)**
+-   Terminal: WSL - Subsistema ubuntu no windows, Power Shell
 -   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**  
--   Dbeaver - Sistema de gerenciamento de vários banco de dado distintos
+-   Administração de banco de dados: Dbeaver - Sistema de gerenciamento de vários banco de dado distintos
 -   Teste de API:  **[Insomnia](https://insomnia.rest/)**
-
 
 
 ---
