@@ -63,7 +63,7 @@ Tabela de conteúdos
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
-No frontend utilizamos, além do Reac, React dom e React Plugin utilizamos o vite que é utilizado para substituir o web pack e o babel, fazendo com que os navegadores entendam a última versão dos scripts utilizados além de entender importações entre arquivos javaScript. Com vite algumas coisas já vem configuradas como o fast refresh, que alterará a nossa aplicação visual no momento em que o novo código for salvo.
+no frontend utilizamos, além do Reac, React dom e React Plugin utilizamos o vite que é utilizado para substituir o web pack e o babel, fazendo com que os navegadores entendam a última versão dos scripts utilizados além de entender importações entre arquivos javaScript. Com vite algumas coisas já vem configuradas como o fast refresh, que alterará a nossa aplicação visual no momento em que o novo código for salvo.
 
 No backend utilizamos Python com Django Rest Framework. O Django é uma biblioteca escrita em Python para criar sistemas web. O Django agrupa muitas bibliotecas e funcionalidades que agilizam o desenvolvimento e se integra no projeto.
 ### Pré-requisitos
