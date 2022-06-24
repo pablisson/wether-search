@@ -140,7 +140,7 @@ No frontend utilizamos, além do Reac, React dom e React Plugin utilizamos o vit
 -   **[React Leaflet](https://react-leaflet.js.org/)**
 -   **[React Dropzone](https://github.com/react-dropzone/react-dropzone)**
 
-> Veja o arquivo  [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/web/package.json)
+> Veja o arquivo   [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/server/package.json)
 
 #### [](https://github.com/tgmarinho/Ecoleta#server-nodejs--typescript)**Server**  ([NodeJS](https://nodejs.org/en/)  +  [TypeScript](https://www.typescriptlang.org/))
 
@@ -154,21 +154,10 @@ No frontend utilizamos, além do Reac, React dom e React Plugin utilizamos o vit
 -   **[Celebrate](https://github.com/arb/celebrate)**
 -   **[Joi](https://github.com/hapijs/joi)**
 
-> Veja o arquivo  [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/server/package.json)
+> Veja o arquivo [package.json](https://github.com/pablisson/wether-search/blob/main/config/settings.py)
 
 #### [](https://github.com/tgmarinho/Ecoleta#mobile-react-native--typescript)**Mobile**  ([React Native](http://www.reactnative.com/)  +  [TypeScript](https://www.typescriptlang.org/))
 
--   **[Expo](https://expo.io/)**
--   **[Expo Google Fonts](https://github.com/expo/google-fonts)**
--   **[React Navigation](https://reactnavigation.org/)**
--   **[React Native Maps](https://github.com/react-native-community/react-native-maps)**
--   **[Expo Constants](https://docs.expo.io/versions/latest/sdk/constants/)**
--   **[React Native SVG](https://github.com/react-native-community/react-native-svg)**
--   **[Axios](https://github.com/axios/axios)**
--   **[Expo Location](https://docs.expo.io/versions/latest/sdk/location/)**
--   **[Expo Mail Composer](https://docs.expo.io/versions/latest/sdk/mail-composer/)**
-
-> Veja o arquivo  [package.json](https://github.com/tgmarinho/README-ecoleta/blob/master/mobile/package.json)
 
 #### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
 
