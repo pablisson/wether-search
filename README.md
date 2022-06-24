@@ -124,12 +124,12 @@ $ python manage.py runserver
 
 ```
 
--   **[Express](https://expressjs.com/)**
--   **[CORS](https://expressjs.com/en/resources/middleware/cors.html)**
+-   **[Python](https://expressjs.com/)**
+-   **[Django](https://expressjs.com/en/resources/middleware/cors.html)**
 -   **[KnexJS](http://knexjs.org/)**
 -   **[SQLite](https://github.com/mapbox/node-sqlite3)**
--   **[ts-node](https://github.com/TypeStrong/ts-node)**
--   **[dotENV](https://github.com/motdotla/dotenv)**
+-   **[DjangoRestFramework](https://www.django-rest-framework.org/)**
+-   **[jsonpath]()**
 -   **[Multer](https://github.com/expressjs/multer)**
 -   **[Celebrate](https://github.com/arb/celebrate)**
 -   **[Joi](https://github.com/hapijs/joi)**
