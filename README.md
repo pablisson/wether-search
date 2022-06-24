@@ -58,45 +58,21 @@ Tabela de conteúdos
 
 ---
 
-## 🎨 Layout
+## 🛫 Funcionalidades Futuras
 
-O layout da aplicação está disponível no Figma:
-
-<a href="https://www.figma.com/file/1SxgOMojOB2zYT0Mdk28lB/Ecoleta?node-id=136%3A546">
-  <img alt="Made by tgmarinho" src="https://img.shields.io/badge/Acessar%20Layout%20-Figma-%2304D361">
-</a>
+- [x] Reestruturar a classe que pega os dados da página web e gera um arquivo json. Aplicar um padrão de projeto que permita a definição de geração de vários tipos de arquivos
+ - [x] navegar pelo mapa para ver as instituições cadastradas
+ - [x] entrar em contato com a entidade através do E-mail ou do WhatsApp
 
 
-### webservice
 
-<p align="center">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/home-mobile.png" width="200px">
-
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/detalhes-mobile.svg" width="200px">
-</p>
-
-### webbackend
-
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/web.svg" width="400px">
-
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/sucesso-web.svg" width="400px">
-</p>
-
-### webfrontend
-<p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/web.svg" width="400px">
-
-  <img alt="NextLevelWeek" title="#NextLevelWeek" src="./assets/sucesso-web.svg" width="400px">
-</p>
 ---
 
 ## 🚀 Como executar o projeto
 
 Este projeto é divido em três partes:
 1. Backend (pasta server) 
-2. Frontend (pasta web)
-3. Mobile (pasta mobile)
+2. Frontend (pasta web))
 
 💡Tanto o Frontend quanto o Mobile precisam que o Backend esteja sendo executado para funcionar.
 
