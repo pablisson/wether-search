@@ -74,7 +74,7 @@ Este projeto é divido em três partes:
 1. Backend (pasta server) 
 2. Frontend (pasta web))
 
-💡Tanto o Frontend quanto o Mobile precisam que o Backend esteja sendo executado para funcionar.
+💡O Frontend precisa que o Backend esteja sendo executado para para buscar os dados de temperatura.
 
 ### Pré-requisitos
 
@@ -87,9 +87,9 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 ```bash
 
 # Clone este repositório
-$ git clone git@github.com:tgmarinho/README-ecoleta.git
+$ git clone git@github.com:pablisson/wether-search.git
 
-# Acesse a pasta do projeto no terminal/cmd
+# Acesse a pasta do projeto no terminal/powershell
 $ cd README-ecoleta
 
 # Vá para a pasta server
