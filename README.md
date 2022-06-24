@@ -20,7 +20,7 @@ Tabela de conteúdos
    * [Funcionalidades](#-funcionalidades)
    * [Funcionalidades e estruturas futuras](#-funcionalidades-e-estruturas-futuras)
    * [Tecnologias](#-tecnologias)
-   * * [Pré-requisitos](#pré-requisitos)
+     * [Pré-requisitos](#pré-requisitos)
      * [WebSite](#user-content-website--react----typescript)
      * [Server](#user-content-server--nodejs----typescript)   
    * [Como executar o projeto](#-como-executar-o-projeto)     
@@ -93,7 +93,7 @@ $ npm run dev
 
 > Veja o arquivo   [package.json](https://github.com/pablisson/wether-search/blob/main/frontend/weather-front/package.json)
 
-#### ***Backend***[](https://github.com/tgmarinho/Ecoleta#server-nodejs--typescript)**Server**  ([NodeJS](https://nodejs.org/en/)  +  [TypeScript](https://www.typescriptlang.org/))
+#### **Backend / Server**  ([Python](https://www.python.org/)  +  [Django REST framework](https://www.django-rest-framework.org/)
 
 -   **[Express](https://expressjs.com/)**
 -   **[CORS](https://expressjs.com/en/resources/middleware/cors.html)**
