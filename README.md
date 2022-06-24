@@ -177,10 +177,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 #### [](https://github.com/tgmarinho/Ecoleta#utilit%C3%A1rios)**Utilitários**
 
--   WSL - Subsistema ubuntu no windows
--   API:  **[IBGE API](https://servicodados.ibge.gov.br/api/docs/localidades?versao=1)**  →  **[API de UFs](https://servicodados.ibge.gov.br/api/docs/localidades?versao=1#api-UFs-estadosGet)**,  **[API de Municípios](https://servicodados.ibge.gov.br/api/docs/localidades?versao=1#api-Municipios-estadosUFMunicipiosGet)**
--   Maps:  **[Leaflet](https://react-leaflet.js.org/en/)**
--   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**  → Extensions:  **[SQLite](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)**
+-   WSL:  Subsistema ubuntu no windows
+-   Power Shell:  **[Leaflet](https://react-leaflet.js.org/en/)**
+-   Editor:  **[Visual Studio Code](https://code.visualstudio.com/)**  
 -   Dbeaver - Sistema de gerenciamento de vários banco de dado distintos
 -   Teste de API:  **[Insomnia](https://insomnia.rest/)**
 
