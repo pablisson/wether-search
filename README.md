@@ -18,6 +18,7 @@ Tabela de conteúdos
 <!--ts-->
    * [Sobre o projeto](#-sobre-o-projeto)
    * [Funcionalidades](#-funcionalidades)
+   * [Funcionalidades e estruturas futuras](#-funcionalidades-e-estruturas-futuras)
    * [Layout](#-layout)
      * [Web Service](#webservice)
      * [Web Backend](#webbackend)
