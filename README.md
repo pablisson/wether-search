@@ -72,8 +72,12 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 A Instalação seguiu os seguintes passos
 ```bash
 
-# Clone este repositório
-$ git clone git@github.com:tgmarinho/README-ecoleta.git
+# Crie um projeto react utilizando o vit
+$ npm create vite@latest
+# Ao executar o comando acima será solicitado as seguintes opções: 
+# 1 -"Project name", escolha o nome do projeto desejado
+# 2 - "Select a framework", escolha react
+# 3 - "Select a varian", escolha react (a opção sem typeScript)
 
 # Acesse a pasta do projeto no seu terminal/cmd
 $ cd README-ecoleta
