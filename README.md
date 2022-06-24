@@ -129,13 +129,14 @@ $ npm run start
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
+No frontend utilizamos, além do Reac, React dom e React Plugin utilizamos o vite que é utilizado para substituir o web pack e o babel, fazendo com que os navegadores entendam a última versão dos scripts utilizados além de entender importações entre arquivos javaScript
 
-#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://vitejs.dev/guide/))
+#### **Website**  ([React](https://reactjs.org/)  +  [Vite](https://vitejs.dev/guide/))
 
--   **[Vite]([https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom])**
--   **[Cors]([https://www.npmjs.com/package/cors])**
+-   **[Vite](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)**
+-   **[Cors](https://www.npmjs.com/package/cors)**
 -   **[Axios](https://github.com/axios/axios)**
--   **[Leaflet](https://react-leaflet.js.org/en/)**
+-   **[Leaflet](https://www.npmjs.com/package/cors)**
 -   **[React Leaflet](https://react-leaflet.js.org/)**
 -   **[React Dropzone](https://github.com/react-dropzone/react-dropzone)**
 
