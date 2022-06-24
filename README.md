@@ -160,16 +160,17 @@ $ git clone git@github.com:pablisson/wether-search.git
 # Vá para a pasta server
 $ cd web-service
 
+# Crie a estrutura do banco de dados
+$ python manage.py makemigrations
+
+# Cria os dados no banco de dados
+$ python manage.py migrate
+
 # Execute o comando para subir o servidor
 $ python manage.py runserver
 
-# Instale as dependências
-$ npm install
 
-# Execute a aplicação em modo de desenvolvimento
-$ npm run dev:server
-
-# O servidor inciará na porta:3333 - acesse http://localhost:3333 
+# O servidor inciará na porta:8000 - acesse http://localhost:8000 
 
 ```
 
