@@ -12,25 +12,25 @@ export function Item(props){
     
     switch (new Date(date).getDay()) {
       case 0:
-        setDay("SUN");
+        setDay("DOM");
         break;
       case 1:
-        setDay("MON");
+        setDay("SEG");
         break;
       case 2:
-        setDay("TUE");
+        setDay("TER");
         break;
       case 3:
-        setDay("WED");
+        setDay("QUA");
         break;
       case 4:
-        setDay("THU");
+        setDay("QUI");
         break;
       case 5:
-        setDay("FRI");
+        setDay("SEX");
         break;
       case 6:
-        setDay("SAT");
+        setDay("SAB");
         break;
     }
 

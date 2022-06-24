@@ -116,23 +116,23 @@ export function Content(){
                 <div className={styles.boxinline}>
 
                   <div>
-                    <div>City</div>
+                    <div>Cidade</div>
                     <div className={styles.h2}>
                       {currentCity}                
                     </div>
                   </div>
 
                   <div>
-                    <div>Temperature</div>
+                    <div>Temperatura</div>
                     <div className={styles.h2}>
                       {currentTemp}º                
                     </div>
                   </div>
 
                   <div>
-                    <div>Coordinates</div>
+                    <div>Coordenadas</div>
                     <div className={styles.h2}>
-                      [{currentlat} ,{currentlon}                ]
+                      [{currentlat} ,{currentlon} ]
                     </div>
                   </div>
 
