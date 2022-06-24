@@ -26,6 +26,7 @@ Tabela de conteúdos
    * [Como executar o projeto](#-como-executar-o-projeto)     
      * [Rodando o Backend (servidor)](#user-content--rodando-o-backend-servidor)
      * [Rodando a aplicação web (Frontend)](#user-content--rodando-a-aplicação-web-frontend)
+   * [Desafios Superados](#-desafios-superados)
    * [Autor](#-autor)
 
 <!--te-->
@@ -210,6 +211,10 @@ $ npm run dev
 
 
 ---
+
+## 🤹🏻‍♀️ Desafios Superados
+No inicio do projeto não possuia nenhum conhecimento em Python e pouco conhecimento em react. Foi uma grande experiência e superação poder fazer essa aplicação e aprensentá-a. Gerou em mim um desejo de avançar na mesma, fazendo os ajustes necessários e aumentando a complexidade
+
 
 ## 🦸 Autor
 
