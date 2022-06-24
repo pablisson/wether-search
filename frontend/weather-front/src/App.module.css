@@ -1,6 +1,9 @@
 .container{
-  
-  flex: 1;
+/*   
+  width: 117rem;
+  height: 60.6rem; */
+  width: 99.5vw;
+  height: 99.5vh;
   background: linear-gradient(180deg, var(--purple-200) 0%, var(--purple-300) 100%);
 }
 

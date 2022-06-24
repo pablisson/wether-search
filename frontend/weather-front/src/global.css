@@ -27,5 +27,6 @@ body{
   -webkit-font-smoothing: antialiased;
   background: var(--purple-800);
   
-  height: 95.5vh;
+  
+  /* height: 95.5vh; */
 }
