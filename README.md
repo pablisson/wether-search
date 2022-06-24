@@ -136,9 +136,9 @@ $ npm run start
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://www.typescriptlang.org/))
+#### **Website**  ([React](https://reactjs.org/)  +  [TypeScript](https://vitejs.dev/guide/))
 
--   **[Vite]([https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom](https://vitejs.dev/guide/])**
+-   **[Vite]([https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom](])**
 -   **[Cors]([https://react-icons.github.io/react-icons/](https://www.npmjs.com/package/cors])**
 -   **[Axios](https://github.com/axios/axios)**
 -   **[Leaflet](https://react-leaflet.js.org/en/)**
